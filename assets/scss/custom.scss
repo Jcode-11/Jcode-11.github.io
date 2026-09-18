@@ -2,3 +2,10 @@
 #dark-mode-toggle span {
     display: inline;
 }
+
+/* A compact portrait keeps the sidebar focused on the writing. */
+.left-sidebar {
+    --sidebar-avatar-size: 64px;
+    --emoji-size: 28px;
+    --emoji-font-size: 14px;
+}
