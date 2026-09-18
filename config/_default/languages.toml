@@ -1,0 +1,19 @@
+[zh]
+    languageCode = "zh-CN"
+    languageName = "简体中文"
+    label        = "简体中文"
+    title        = "我的个人博客"
+    weight       = 1
+
+[en]
+    languageCode = "en-US"
+    languageName = "English"
+    label        = "English"
+    title        = "My Personal Blog"
+    weight       = 2
+
+    [en.params.sidebar]
+        subtitle = "Notes on ideas, projects, and the things I care about."
+
+    [en.params.footer]
+        customText = "Keep learning. Keep creating."
