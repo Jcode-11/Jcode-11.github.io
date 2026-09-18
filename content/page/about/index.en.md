@@ -1,27 +1,33 @@
 ---
-title: "About Me"
-description: "A short introduction"
+title: "About Jcode"
+description: "Full-stack development, intelligent tools, and continuous exploration"
 date: 2026-09-18
 slug: "about"
 comments: false
 ---
 
-Hello, I’m **Your Name**.
+Hello, I’m **Jcode**.
 
-This is my personal blog: a place to document what I am learning, the projects I build, and the small moments worth keeping.
+I care about the complete path from an ambiguous problem to a useful outcome: understanding the need, clarifying boundaries, building the solution, verifying the details, and turning the experience into reusable knowledge and tools. This blog is where I document technical practice, project thinking, and moments worth keeping.
 
-## What I write about
+## What I work across
 
-- **Technology and projects** — practical notes, retrospectives, and problem-solving.
-- **Continuous learning** — turning scattered knowledge into notes I can revisit.
-- **Life and inspiration** — ideas, people, and experiences that feel meaningful.
+- **End-to-end delivery** — moving from product needs, APIs, and data models to coordinated web, mobile, and server-side delivery, including builds and deployment.
+- **Web and mobile development** — working with the Java / Spring ecosystem, Vue, UniApp, MySQL, and similar stacks, with attention to API contracts, interaction details, and real usability.
+- **Desktop tools and automation** — building productivity tools with Python and turning repetitive work into scripts, workflows, and reusable components.
+- **LLM-assisted programming** — exploring how large language models can assist analysis, coding, debugging, testing, and knowledge organization while staying aware of their real limits.
 
-## A simple principle
+## Strengths I bring
 
-I want each post to answer a real question or leave a useful trail for my future self.
+- **Making complex problems clear** — identifying facts, constraints, and goals before choosing the simplest viable approach.
+- **Connecting across domains** — moving between frontend, backend, data, desktop, and deployment work to find where an issue truly originates.
+- **Carrying details through to outcomes** — looking beyond finished code to API consistency, visual presentation, build results, and real usage.
+- **Learning through reflection and communication** — writing down the process so a solution can be understood and reused.
 
-## Find me online
+## Beyond work
 
-GitHub: <https://github.com/Jcode-11>
+I enjoy experimenting with LLMs for programming and thinking about how new tools can genuinely improve creative work. Away from the keyboard, I listen to music and enjoy road trips as a way to reset my perspective.
 
-> This page is written in Markdown too. Update it, push the change to GitHub, and the site will publish automatically.
+## Contact
+
+Email: <ldone5888@gmail.com>
