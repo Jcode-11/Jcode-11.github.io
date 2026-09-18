@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="个人头像占位图">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2b6cb0"/><stop offset="1" stop-color="#285e61"/></linearGradient></defs>
+  <rect width="256" height="256" rx="128" fill="url(#bg)"/>
+  <circle cx="128" cy="96" r="31" fill="none" stroke="#fff" stroke-width="16"/>
+  <path d="M78 177c6-31 25-47 50-47s44 16 50 47" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="16"/>
+</svg>

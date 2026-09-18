@@ -10,17 +10,17 @@ favicon        = "img/favicon.png"
 SortBy              = "default"
 
 [footer]
-    since      = 2020
-    customText = ""
+    since      = 2026
+    customText = "持续记录，持续生长"
 
 [dateFormat]
     published   = ":date_full"
     lastUpdated = ":date_full"
 
 [sidebar]
-    emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    avatar   = "img/avatar.png"
+    emoji    = "✦"
+    subtitle = "在这里记录思考、项目与热爱。"
+    avatar   = "img/avatar.svg"
 
 [article]
     headingAnchor = false
@@ -29,11 +29,10 @@ SortBy              = "default"
 
     [article.license]
         enabled = true
-        default = "Licensed under CC BY-NC-SA 4.0"
+        default = "本文采用 CC BY 4.0 协议发布"
 
 [widgets]
     homepage = [
-        { type = "search" },
         { type = "archives", params = { limit = 5 } },
         { type = "categories", params = { limit = 10 } },
         { type = "tag-cloud", params = { limit = 10 } },
@@ -50,8 +49,8 @@ SortBy              = "default"
 
 ## Comments
 [comments]
-    enabled  = true
-    provider = "disqus"
+    enabled  = false
+    provider = ""
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
