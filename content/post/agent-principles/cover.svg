@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Agent 的核心，是反馈后的决策</title>
+  <desc id="desc">模型选择下一步，运行时执行动作，观察环境结果，再根据反馈做出新的决策。副标题：从固定工作流到自主执行。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#208778" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.eyebrow{font-size:19px;letter-spacing:3px;fill:#208778;font-weight:700}.heading{font-size:56px;font-weight:700}.sub{font-size:27px;fill:#526778}.label{font-size:28px;font-weight:700}.note{font-size:22px;fill:#526778}.line{fill:none;stroke:#208778;stroke-width:3;marker-end:url(#arrow);stroke-linejoin:round}</style>
+  </defs>
+  <rect width="1200" height="630" fill="#f8f6ef"/>
+  <circle cx="1160" cy="30" r="180" fill="#e8f1e9"/>
+  <text x="72" y="68" class="eyebrow">AGENT · 原理与工程</text>
+  <text x="72" y="146" class="heading">Agent 的核心，</text>
+  <text x="72" y="218" class="heading">是反馈后的决策</text>
+  <text x="75" y="277" class="sub">从固定工作流到自主执行</text>
+  <rect x="75" y="348" width="290" height="130" rx="20" fill="#dfefe7" stroke="#aad4c5"/>
+  <rect x="455" y="348" width="290" height="130" rx="20" fill="#fffdf7" stroke="#cbd5d7"/>
+  <rect x="835" y="348" width="290" height="130" rx="20" fill="#fffdf7" stroke="#cbd5d7"/>
+  <text x="220" y="402" class="label" text-anchor="middle">选择下一步</text>
+  <text x="220" y="443" class="note" text-anchor="middle">模型决策</text>
+  <text x="600" y="402" class="label" text-anchor="middle">受控执行</text>
+  <text x="600" y="443" class="note" text-anchor="middle">运行时与工具</text>
+  <text x="980" y="402" class="label" text-anchor="middle">观察结果</text>
+  <text x="980" y="443" class="note" text-anchor="middle">真实环境反馈</text>
+  <path d="M375 413 H442" class="line"/>
+  <path d="M755 413 H822" class="line"/>
+  <path d="M980 488 V554 H220 V490" class="line"/>
+  <rect x="391" y="529" width="418" height="48" rx="24" fill="#f8f6ef"/>
+  <text x="600" y="561" class="note" text-anchor="middle">根据新证据，重新决定怎么做</text>
+</svg>

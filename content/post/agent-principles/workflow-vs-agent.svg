@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="840" viewBox="0 0 1200 840" role="img" aria-labelledby="title desc">
+  <title id="title">固定工作流和 Agent 循环有什么区别</title>
+  <desc id="desc">固定工作流按预先定义的路径完成输入、分类、调用预设接口和整理输出。Agent 从目标出发读取证据，动态选择动作，观察执行反馈，再决定下一步；它可以根据结果改变路径。固定流程仍然适合规则明确、稳定且需要审计的任务。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#208778" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="gray-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#708390" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.title{font-size:42px;font-weight:700}.heading{font-size:28px;font-weight:700}.label{font-size:25px;font-weight:700}.note{font-size:23px;fill:#526778}.line{fill:none;stroke:#208778;stroke-width:3;marker-end:url(#arrow);stroke-linejoin:round}.fixed{fill:none;stroke:#708390;stroke-width:3;marker-end:url(#gray-arrow)}</style>
+  </defs>
+  <rect width="1200" height="840" fill="#f8f6ef"/>
+  <text x="55" y="76" class="title">区别在于：谁决定下一步，依据是什么</text>
+  <rect x="35" y="123" width="1130" height="263" rx="22" fill="#fffdf7" stroke="#d6dcda"/>
+  <text x="65" y="170" class="heading">固定工作流</text>
+  <text x="282" y="169" class="note">主要路径由开发者预先定义</text>
+  <rect x="65" y="216" width="225" height="92" rx="14" fill="#edf0f1"/>
+  <rect x="343" y="216" width="225" height="92" rx="14" fill="#edf0f1"/>
+  <rect x="621" y="216" width="225" height="92" rx="14" fill="#edf0f1"/>
+  <rect x="899" y="216" width="225" height="92" rx="14" fill="#edf0f1"/>
+  <text x="177" y="272" class="label" text-anchor="middle">输入</text>
+  <text x="455" y="272" class="label" text-anchor="middle">分类</text>
+  <text x="733" y="272" class="label" text-anchor="middle">预设 API</text>
+  <text x="1011" y="272" class="label" text-anchor="middle">整理输出</text>
+  <path d="M296 262 H332" class="fixed"/>
+  <path d="M574 262 H610" class="fixed"/>
+  <path d="M852 262 H888" class="fixed"/>
+  <text x="67" y="356" class="note">分类可以使用模型；后续路线仍然可以是预设的。</text>
+  <rect x="35" y="418" width="1130" height="294" rx="22" fill="#fffdf7" stroke="#aad4c5"/>
+  <text x="65" y="468" class="heading">Agent 循环</text>
+  <text x="282" y="467" class="note">下一步受到最新证据与执行结果的影响</text>
+  <rect x="60" y="511" width="185" height="86" rx="14" fill="#edf0f1"/>
+  <rect x="283" y="511" width="185" height="86" rx="14" fill="#edf0f1"/>
+  <rect x="506" y="511" width="185" height="86" rx="14" fill="#dfefe7" stroke="#aad4c5"/>
+  <rect x="729" y="511" width="185" height="86" rx="14" fill="#edf0f1"/>
+  <rect x="952" y="511" width="185" height="86" rx="14" fill="#dfefe7" stroke="#aad4c5"/>
+  <text x="152" y="564" class="label" text-anchor="middle">目标</text>
+  <text x="375" y="564" class="label" text-anchor="middle">读取证据</text>
+  <text x="598" y="564" class="label" text-anchor="middle">动态选动作</text>
+  <text x="821" y="564" class="label" text-anchor="middle">执行与反馈</text>
+  <text x="1044" y="564" class="label" text-anchor="middle">重新决定</text>
+  <path d="M251 554 H272" class="line"/>
+  <path d="M474 554 H495" class="line"/>
+  <path d="M697 554 H718" class="line"/>
+  <path d="M920 554 H941" class="line"/>
+  <path d="M1044 607 V659 H598 V609" class="line"/>
+  <rect x="676" y="638" width="290" height="40" rx="14" fill="#fffdf7"/>
+  <text x="821" y="666" class="note" text-anchor="middle">补证据 / 换动作 / 结束</text>
+  <text x="600" y="783" class="note" text-anchor="middle">固定流程也有价值：适合规则明确、稳定且需要审计的任务。</text>
+</svg>

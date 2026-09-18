@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="990" viewBox="0 0 1200 990" role="img" aria-labelledby="title desc">
+  <title id="title">Agent 的决策与执行闭环</title>
+  <desc id="desc">目标和当前状态交给模型，模型选择下一步动作。运行时先校验权限再执行工具，接收真实环境反馈，将结果更新进状态后再次交给模型。整个闭环受权限、预算与停止条件约束，可以完成任务、请求用户补充或在预算耗尽时停止。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#208778" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="muted-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#7b8994" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.title{font-size:42px;font-weight:700}.subtitle{font-size:24px;fill:#526778}.label{font-size:29px;font-weight:700}.note{font-size:23px;fill:#526778}.small{font-size:21px;fill:#526778}.line{fill:none;stroke:#208778;stroke-width:3;marker-end:url(#arrow);stroke-linejoin:round}.exit{fill:none;stroke:#7b8994;stroke-width:2.5;stroke-dasharray:7 6;marker-end:url(#muted-arrow)}</style>
+  </defs>
+  <rect width="1200" height="990" fill="#f8f6ef"/>
+  <text x="55" y="72" class="title">一次调用之外，还有一个执行循环</text>
+  <text x="58" y="116" class="subtitle">模型负责选择；程序负责执行与约束。</text>
+  <rect x="35" y="154" width="1130" height="733" rx="28" fill="#fffdf7" stroke="#baccc8" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="72" y="137" width="635" height="34" rx="10" fill="#f8f6ef"/>
+  <text x="88" y="163" class="small">外层约束：权限 · 时间 / 成本预算 · 停止条件</text>
+  <rect x="75" y="215" width="280" height="110" rx="16" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="215" y="262" class="label" text-anchor="middle">目标 + 当前状态</text>
+  <text x="215" y="301" class="note" text-anchor="middle">任务、上下文、已有证据</text>
+  <rect x="435" y="215" width="350" height="110" rx="16" fill="#dfefe7" stroke="#aad4c5"/>
+  <text x="610" y="262" class="label" text-anchor="middle">模型选择下一步</text>
+  <text x="610" y="301" class="note" text-anchor="middle">工具、参数，或结束本轮</text>
+  <path d="M365 270 H423" class="line"/>
+  <rect x="850" y="425" width="280" height="170" rx="16" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="990" y="472" class="label" text-anchor="middle">运行时执行</text>
+  <text x="990" y="515" class="note" text-anchor="middle">校验参数与权限</text>
+  <text x="990" y="554" class="note" text-anchor="middle">获准后调用真实工具</text>
+  <path d="M797 270 H990 V413" class="line"/>
+  <text x="872" y="367" class="small">动作请求</text>
+  <rect x="440" y="695" width="350" height="115" rx="16" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="615" y="743" class="label" text-anchor="middle">真实环境反馈</text>
+  <text x="615" y="782" class="note" text-anchor="middle">结果、错误、测试与日志</text>
+  <path d="M990 607 V752 H802" class="line"/>
+  <rect x="75" y="470" width="280" height="115" rx="16" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="215" y="518" class="label" text-anchor="middle">更新状态</text>
+  <text x="215" y="557" class="note" text-anchor="middle">记录结果，补充上下文</text>
+  <path d="M428 752 H215 V597" class="line"/>
+  <path d="M215 458 V369 H492 V337" class="line"/>
+  <text x="253" y="410" class="small">再次决策</text>
+  <rect x="425" y="439" width="370" height="162" rx="16" fill="#f8f6ef" stroke="#d2d8d6"/>
+  <text x="610" y="486" class="label" text-anchor="middle">退出或暂停</text>
+  <text x="610" y="531" class="note" text-anchor="middle">完成 · 询问 · 预算停止</text>
+  <text x="610" y="571" class="small" text-anchor="middle">满足停止条件，就不再继续循环</text>
+  <path d="M610 337 V427" class="exit"/>
+  <text x="600" y="939" class="subtitle" text-anchor="middle">关键：下一步要能够受到真实反馈的影响。</text>
+</svg>
