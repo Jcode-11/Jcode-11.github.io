@@ -9,3 +9,8 @@
     --emoji-size: 28px;
     --emoji-font-size: 14px;
 }
+
+.site-avatar .site-logo {
+    object-fit: cover;
+    object-position: center 36%;
+}

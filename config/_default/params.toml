@@ -20,7 +20,7 @@ SortBy              = "default"
 [sidebar]
     emoji    = "✦"
     subtitle = "在这里记录思考、项目与热爱。"
-    avatar   = "img/avatar.svg"
+    avatar   = "img/avatar.jpg"
 
 [article]
     headingAnchor = false
