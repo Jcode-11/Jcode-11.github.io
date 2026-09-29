@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Agent 中模型与运行时的边界</title>
+  <desc id="desc">目标、历史和工具结果写入代码维护的状态。模型根据状态和工具清单提出下一步；运行时负责权限、参数、政策、预算和执行。结果被写回状态形成循环。外层包含最大步骤、超时、预算和人工审批等边界。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#208778" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="mutedArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#7b8994" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.title{font-size:42px;font-weight:700}.subtitle{font-size:24px;fill:#526778}.label{font-size:29px;font-weight:700}.note{font-size:23px;fill:#526778}.small{font-size:20px;fill:#526778}.line{fill:none;stroke:#208778;stroke-width:3;marker-end:url(#arrow);stroke-linejoin:round}.exit{fill:none;stroke:#7b8994;stroke-width:2.5;stroke-dasharray:7 6;marker-end:url(#mutedArrow)}</style>
+  </defs>
+  <rect width="1200" height="860" fill="#f8f6ef"/>
+  <text x="54" y="72" class="title">Agent 是一个受控的反馈循环</text>
+  <text x="56" y="114" class="subtitle">模型提议行动；运行时决定能否执行；真实结果影响下一轮。</text>
+  <rect x="35" y="150" width="1130" height="610" rx="28" fill="#fffdf7" stroke="#baccc8" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="73" y="133" width="685" height="36" rx="10" fill="#f8f6ef"/>
+  <text x="88" y="160" class="small">运行边界：最大步骤 · 总时长 / 成本预算 · 超时 · 人工审批</text>
+  <rect x="74" y="230" width="282" height="124" rx="17" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="215" y="279" class="label" text-anchor="middle">应用状态</text>
+  <text x="215" y="319" class="note" text-anchor="middle">目标、历史、证据、权限</text>
+  <rect x="456" y="230" width="318" height="124" rx="17" fill="#dfefe7" stroke="#aad4c5"/>
+  <text x="615" y="279" class="label" text-anchor="middle">模型：提出下一步</text>
+  <text x="615" y="319" class="note" text-anchor="middle">查什么、调用什么、怎么说</text>
+  <path d="M368 292 H444" class="line"/>
+  <rect x="845" y="430" width="286" height="178" rx="17" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="988" y="481" class="label" text-anchor="middle">运行时：受控执行</text>
+  <text x="988" y="522" class="note" text-anchor="middle">校验参数、权限与政策</text>
+  <text x="988" y="561" class="note" text-anchor="middle">调用工具、记录审计</text>
+  <path d="M786 292 H988 V418" class="line"/>
+  <text x="878" y="363" class="small">工具请求</text>
+  <rect x="456" y="640" width="318" height="116" rx="17" fill="#edf0f1" stroke="#cbd5d7"/>
+  <text x="615" y="687" class="label" text-anchor="middle">真实结果</text>
+  <text x="615" y="727" class="note" text-anchor="middle">数据、错误、日志、产物</text>
+  <path d="M988 620 V698 H786" class="line"/>
+  <path d="M444 698 H215 V366" class="line"/>
+  <text x="252" y="562" class="small">写回状态</text>
+  <rect x="426" y="418" width="378" height="144" rx="17" fill="#f8f6ef" stroke="#d2d8d6"/>
+  <text x="615" y="465" class="label" text-anchor="middle">暂停、交接或结束</text>
+  <text x="615" y="505" class="note" text-anchor="middle">完成 / 信息不足 / 权限不足</text>
+  <text x="615" y="540" class="small" text-anchor="middle">停止条件由运行时控制</text>
+  <path d="M615 366 V406" class="exit"/>
+  <text x="600" y="820" class="subtitle" text-anchor="middle">核心分工：状态与边界在代码，模型负责下一步建议。</text>
+</svg>

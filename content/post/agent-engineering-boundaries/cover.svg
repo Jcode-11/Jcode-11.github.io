@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">开发 Agent 前，先把模型、状态和边界讲清楚</title>
+  <desc id="desc">模型在状态和工具清单的上下文中提出下一步；运行时检查权限、规则和预算后执行；结果再回到状态。强调状态与判断在代码，模型负责查什么和怎么说。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#208778" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.eyebrow{font-size:19px;letter-spacing:3px;fill:#208778;font-weight:700}.heading{font-size:54px;font-weight:700}.sub{font-size:25px;fill:#526778}.label{font-size:27px;font-weight:700}.note{font-size:21px;fill:#526778}.line{fill:none;stroke:#208778;stroke-width:3;marker-end:url(#arrow);stroke-linejoin:round}</style>
+  </defs>
+  <rect width="1200" height="630" fill="#f8f6ef"/>
+  <circle cx="1160" cy="24" r="180" fill="#e8f1e9"/>
+  <text x="72" y="70" class="eyebrow">AGENT · 工程原理</text>
+  <text x="72" y="148" class="heading">模型、状态和边界，</text>
+  <text x="72" y="218" class="heading">决定 Agent 能否落地</text>
+  <text x="74" y="275" class="sub">把“会调用工具”变成可审计的系统</text>
+  <rect x="74" y="350" width="284" height="126" rx="20" fill="#edf0f1" stroke="#cbd5d7"/>
+  <rect x="456" y="350" width="284" height="126" rx="20" fill="#dfefe7" stroke="#aad4c5"/>
+  <rect x="838" y="350" width="284" height="126" rx="20" fill="#fffdf7" stroke="#cbd5d7"/>
+  <text x="216" y="404" class="label" text-anchor="middle">状态与证据</text>
+  <text x="216" y="443" class="note" text-anchor="middle">代码保存</text>
+  <text x="598" y="404" class="label" text-anchor="middle">下一步行动</text>
+  <text x="598" y="443" class="note" text-anchor="middle">模型提出</text>
+  <text x="980" y="404" class="label" text-anchor="middle">授权与执行</text>
+  <text x="980" y="443" class="note" text-anchor="middle">运行时负责</text>
+  <path d="M368 413 H444" class="line"/>
+  <path d="M750 413 H826" class="line"/>
+  <path d="M980 486 V550 H216 V488" class="line"/>
+  <text x="598" y="575" class="note" text-anchor="middle">工具结果回到状态，再影响下一轮判断</text>
+</svg>
