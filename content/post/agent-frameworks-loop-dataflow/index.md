@@ -2,7 +2,7 @@
 title: 'MoFA、LangChain 与 LangGraph：从 Agent Loop 到 Dataflow'
 description: '沿着控制流、状态、工具调用与组件组合，理解三个 Agent 框架的底层定位、取舍和组合方式。'
 slug: 'agent-frameworks-loop-dataflow'
-date: 2026-10-07T09:00:00+08:00
+date: 2026-10-07T00:00:00+08:00
 image: 'cover.svg'
 categories:
   - AI 工程
