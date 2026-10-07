@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">自研 Agent 上下文裁剪实践</title>
+  <desc id="desc">从暴力滑窗与摘要的陷阱，到工具骨架微压缩与工业级落地。</desc>
+  <defs>
+    <style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#172d43}.eyebrow{font-size:19px;letter-spacing:3px;fill:#208778;font-weight:700}.heading{font-size:52px;font-weight:700}.sub{font-size:26px;fill:#526778}.label{font-size:28px;font-weight:700}.note{font-size:20px;fill:#526778}</style>
+  </defs>
+  <rect width="1200" height="630" fill="#f8f6ef"/><circle cx="1140" cy="50" r="180" fill="#e8f1e9"/>
+  <text x="72" y="68" class="eyebrow">AGENT · 工程实践</text>
+  <text x="72" y="152" class="heading">别再盲目搞滑窗了：</text>
+  <text x="72" y="222" class="heading">自研 Agent 上下文裁剪</text>
+  <text x="75" y="278" class="sub">反思暴力淘汰陷阱，打造 0 延迟工具骨架微压缩</text>
+  <rect x="72" y="365" width="320" height="128" rx="20" fill="#dfefe7" stroke="#aad4c5"/><rect x="440" y="365" width="320" height="128" rx="20" fill="#fffdf7" stroke="#cbd5d7"/><rect x="808" y="365" width="320" height="128" rx="20" fill="#dfefe7" stroke="#aad4c5"/>
+  <text x="232" y="420" class="label" text-anchor="middle">真身投影分离</text><text x="232" y="460" class="note" text-anchor="middle">存储与请求载荷解耦</text>
+  <text x="600" y="420" class="label" text-anchor="middle">工具骨架降维</text><text x="600" y="460" class="note" text-anchor="middle">历史SQL结果砍掉90%</text>
+  <text x="968" y="420" class="label" text-anchor="middle">多轮连贯记忆</text><text x="968" y="460" class="note" text-anchor="middle">保留用户提问不失忆</text>
+  <path d="M400 429 H428 M768 429 H796" fill="none" stroke="#208778" stroke-width="3"/>
+  <text x="600" y="555" class="note" text-anchor="middle">认知反思 · 工业级实践 · 极简架构落地</text>
+</svg>
